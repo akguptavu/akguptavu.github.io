@@ -45,6 +45,9 @@ section h2{font-family:var(--serif);font-size:1.3rem;font-weight:600;color:var(-
 .research-list li:last-child{border-bottom:none}
 .research-list li h3{font-family:var(--serif);font-size:1.05rem;font-weight:600;color:var(--fg);margin-bottom:.3rem}
 .research-list li p{font-size:.97rem;color:var(--fg2);font-weight:300;line-height:1.7;margin:0}
+.research-list li .cite{display:block;margin-top:.35rem;font-size:.85rem;color:var(--fg3);font-weight:400;line-height:1.5}
+.research-list li .cite a{color:var(--blue);text-decoration:none}
+.research-list li .cite a:hover{text-decoration:underline}
 .pub-item{padding:1.1rem 1.3rem;background:var(--bg);border-radius:6px;border-left:3px solid var(--blue);margin-bottom:.8rem;transition:background .2s}
 .pub-item:hover{background:var(--blue-light)}
 .pub-item .badge{display:inline-block;font-size:.7rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.2rem .55rem;border-radius:3px;margin-bottom:.4rem}
@@ -58,14 +61,14 @@ footer{border-top:1px solid var(--border);padding:1.5rem 0;text-align:center;fon
 </style>
 </head>
 <body>
-<nav><div class="inner"><a href="index.html" class="brand">Ashok K. Gupta</a><div class="links"><a href="index.html" class="active">Home</a><a href="research.html">Research</a><a href="publications.html">Publications</a><a href="mentoring.html">Mentoring</a><a href="tools.html">Tools</a><a href="scidata.html">Data</a><a href="funding.html">Funding</a></div></div></nav>
+<nav><div class="inner"><a href="index.html" class="brand">Ashok K. Gupta</a><div class="links"><a href="index.html" class="active">Home</a><a href="research.html">Research</a><a href="publications.html">Publications</a><a href="mentoring.html">Mentoring</a><a href="tools.html">Tools</a><a href="scidata.html">Data</a><!-- <a href="funding.html">Funding</a> --></div></div></nav>
 
 <div class="hero fade">
   <div class="hero-text">
     <h1>Ashok Kumar Gupta, Ph.D.</h1>
     <div class="role">Staff Scientist</div>
     <div class="dept">Department of Earth &amp; Environmental Sciences, Vanderbilt University</div>
-    <p class="intro">I work at the intersection of <strong>aerosols, clouds, climate, and machine learning</strong>. My current efforts span deep-learning satellite algorithms for NASA's <strong>PolSIR</strong> mission, spectrally resolved polar cloud radiative diagnostics using NASA's <strong>PREFIRE</strong> observations, the role of <strong>mineral-dust INPs and secondary ice production</strong> in Arctic mixed-phase clouds, reconstruction of the 21st-century global dust cycle, and physics-informed ML for real-time volcanic cloud detection.</p>
+    <p class="intro">I study how <strong>aerosols, clouds, and radiation</strong> interact to shape weather and climate, from tropical convection and cirrus to polar mixed-phase clouds. My approach combines NASA satellite and airborne observations with climate model output, radiative-transfer and cloud-resolving simulations, and <strong>machine learning</strong>, guided by a recurring question: what does the vertical and size-resolved structure of aerosols and clouds reveal that column-integrated quantities cannot? Current themes include <strong>mineral dust</strong>, from its evolving global cycle to its role in <strong>cloud microphysics</strong> — the warm-rain and ice-crystal processes that govern precipitation; the <strong>radiative structure</strong> of tropical cirrus and polar clouds; the atmospheric and climate impacts of <strong>volcanic eruptions</strong>; and <strong>physics-informed deep learning</strong> for satellite retrievals, observation-consistent datasets, and model parameterizations.</p>
     <div class="hero-links"><a href="publications.html" class="btn-blue">Publications</a><a href="https://scholar.google.com/citations?user=PiFGqo4AAAAJ" target="_blank" class="btn-outline">Google Scholar</a><a href="research.html" class="btn-outline">Research</a></div>
   </div>
   <div class="hero-photo"><img src="figures/profile.jpg" alt="Ashok Kumar Gupta, Ph.D."></div>
@@ -76,12 +79,12 @@ footer{border-top:1px solid var(--border);padding:1.5rem 0;text-align:center;fon
 <section>
   <h2 class="fade">Research Areas</h2>
   <ul class="research-list fade">
-    <li><h3>Aerosol–Cloud–Climate Interactions</h3><p>How aerosols govern cloud microphysics, precipitation pathways, and Earth's radiative balance via satellite observations, radiative transfer modeling, and cloud-resolving simulations.</p></li>
-    <li><h3>Arctic Mixed-Phase Clouds, INPs &amp; Secondary Ice Production</h3><p>Mineral-dust and biological ice-nucleating particles (INPs) and SIP mechanisms — rime splintering, ice–ice collisional breakup, freezing-drop fragmentation, sublimation breakup — controlling liquid–ice partitioning in high-latitude mixed-phase clouds.</p></li>
-    <li><h3>Polar Cloud Radiative Effects &amp; NASA PREFIRE</h3><p>Leveraging PREFIRE far-IR/IR spectral observations (~5–54 µm) to characterize spectrally resolved longwave cloud radiative effects across polar regions and evaluate reanalyses in measurement space.</p></li>
-    <li><h3>Global Dust Cycle &amp; Land–Atmosphere Feedbacks</h3><p>Reconstructing the 21st-century dust cycle via multi-sensor observations and inverse modeling; examining how land-use change, soil moisture, and vegetation modulate dust emissions and climate feedbacks.</p></li>
-    <li><h3>Volcanic Impacts on Climate</h3><p>How stratospheric injections of water vapor and SO₂ from eruptions perturb radiative forcing and surface temperatures — including the landmark 2022 Hunga Tonga eruption studies.</p></li>
-    <li><h3>Deep Learning for Satellite Retrievals</h3><p>Deep-learning algorithms for ice-cloud microphysical retrievals (NASA PolSIR) and physics-informed ML for near-real-time volcanic umbrella cloud detection from geostationary imagery.</p></li>
+    <li><h3>Mineral Dust, Clouds &amp; Precipitation</h3><p>How Saharan and other mineral dust interacts with tropical convection and precipitation, drawing on NASA airborne field campaigns, satellite observations, and cloud-resolving simulations.</p><span class="cite">Related: <a href="https://doi.org/10.1038/s43247-023-00884-5" target="_blank">Gupta et al., Commun. Earth Environ. (2023)</a> · <a href="https://doi.org/10.1038/s41467-026-70952-9" target="_blank">Kok, Gupta et al., Nat. Commun. (2026)</a></span></li>
+    <li><h3>Global Dust Cycle &amp; Its 21st-Century Decline</h3><p>Observation-constrained reconstruction of the global dust cycle, showing a −10 ± 8 % decline in dust optical depth during 2003–2023, its regional drivers, and dust longwave radiative effects missing from climate models.</p><span class="cite">Related: <a href="https://doi.org/10.21203/rs.3.rs-8454087/v1" target="_blank">Gupta et al., Sci. Adv. (2026)</a> · <a href="https://doi.org/10.1038/s41467-026-70952-9" target="_blank">Kok, Gupta et al., Nat. Commun. (2026)</a></span></li>
+    <li><h3>Arctic Mixed-Phase Clouds &amp; Ice Formation</h3><p>The role of ice-nucleating particles and ice-formation processes in the liquid–ice balance of high-latitude mixed-phase clouds.</p><span class="cite">Related: Gupta et al. (2026, in preparation)</span></li>
+    <li><h3>Cirrus &amp; Polar Cloud Radiative Effects</h3><p>Observation-based characterization of cloud radiative heating and its vertical and diurnal structure in tropical cirrus and polar clouds, using NASA satellite observations.</p><span class="cite">Related: Gupta &amp; Bennartz (2026, submitted to <em>PNAS</em>)</span></li>
+    <li><h3>Volcanic Clouds &amp; Climate</h3><p>Satellite-based tracking of explosive eruption clouds and quantification of their radiative and climate impacts, including the 2022 Hunga eruption sequence.</p><span class="cite">Related: <a href="https://doi.org/10.1038/s43247-025-02181-9" target="_blank">Gupta et al., Commun. Earth Environ. (2025)</a> · <a href="https://doi.org/10.1038/s43247-022-00606-3" target="_blank">Gupta et al., Commun. Earth Environ. (2022)</a> · <a href="https://doi.org/10.1029/2023GC010914" target="_blank">Kelly et al., G-Cubed (2023)</a></span></li>
+    <li><h3>Machine Learning for Atmospheric Science</h3><p>Physics-informed deep learning and Bayesian methods for satellite retrievals, volcanic-cloud detection, observation-consistent aerosol datasets, and the representation of clouds and convection in climate models.</p><span class="cite">Related: <a href="https://doi.org/10.1038/s43247-023-00884-5" target="_blank">Gupta et al., Commun. Earth Environ. (2023)</a> · Gupta &amp; Bennartz (2026, in preparation)</span></li>
   </ul>
 </section>
 
@@ -90,14 +93,16 @@ footer{border-top:1px solid var(--border);padding:1.5rem 0;text-align:center;fon
 <section>
   <h2 class="fade">Selected Publications</h2>
   <div class="fade">
-    <div class="pub-item"><span class="badge badge-new">New 2026</span><h3>A global decline in atmospheric dust during the 21st century</h3><div class="meta">Gupta, Kok, Amiridis, Gkikas, Rizos, Proestakis, Logothetis, Marinou &amp; Pérez García-Pando · Science Advances (2026; accepted with minor revision)</div><p>Global DAOD decline of −10 ± 8 % during 2003–2023 — the strongest evidence Earth has become less dusty.</p></div>
+    <div class="pub-item"><span class="badge badge-new">New 2026</span><h3>A global decline in atmospheric dust during the 21st century</h3><div class="meta">Gupta, Kok, Amiridis, Gkikas, Rizos, Proestakis, Logothetis, Marinou &amp; Pérez García-Pando · Science Advances (2026)</div><p>Global DAOD decline of −10 ± 8 % during 2003–2023 — the strongest evidence Earth has become less dusty.</p></div>
     <div class="pub-item"><span class="badge badge-new">New 2026</span><h3>Desert dust exerts a substantial longwave radiative forcing missing from climate models</h3><div class="meta">Kok, Gupta et al. · Nature Communications (2026)</div><p>Present-day dust longwave DRE constrained to +0.25 ± 0.06 W m⁻² — nearly double climate model estimates.</p></div>
+    <div class="pub-item"><span class="badge badge-feat">Featured</span><h3>The microphysics of the warm-rain and ice crystal processes of precipitation in simulated continental convective storms</h3><div class="meta">Gupta et al. · Communications Earth &amp; Environment (2023)</div><p>Tracer-tagged aerosol–cloud simulations show that the balance between warm-rain and ice-crystal precipitation pathways is set by cloud-base temperature and aerosol conditions, with nearly 80% of surface rain forming via warm-rain processes in very warm-based storms.</p></div>
     <div class="pub-item"><span class="badge badge-feat">Featured</span><h3>The January 2022 Hunga eruption cooled the Southern Hemisphere in 2022 and 2023</h3><div class="meta">Gupta, Mittal, Fauria, Bennartz &amp; Kok · Communications Earth &amp; Environment (2025)</div><p>Net radiative cooling of −0.55 ± 0.05 W m⁻² from sulfate aerosols, driving a −0.10 K Southern Hemisphere temperature anomaly.</p></div>
     <div class="pub-item"><span class="badge badge-feat">Featured</span><h3>Eruption chronology of the Hunga Tonga–Hunga Ha'apai eruption sequence</h3><div class="meta">Gupta, Bennartz, Fauria &amp; Mittal · Communications Earth &amp; Environment (2022)</div><p>Unprecedented umbrella cloud heights (~31 km) and two distinct ice-rich layers with volumetric flow rates of ~5.0 × 10¹¹ m³ s⁻¹.</p></div>
   </div>
   <p style="margin-top:1.2rem" class="fade"><a href="publications.html" style="color:var(--blue);font-weight:500;font-size:.97rem">View all 13 publications &rarr;</a></p>
 </section>
 
-<footer><p>
+<footer><p>&copy; 2026 Ashok Kumar Gupta, Ph.D. · Vanderbilt University</p></footer>
+
 </body>
 </html>

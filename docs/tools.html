@@ -33,25 +33,27 @@ footer{border-top:1px solid var(--border);padding:1.5rem 0;text-align:center;fon
 </style>
 </head>
 <body>
-<nav><div class="inner"><a href="index.html" class="brand">Ashok K. Gupta</a><div class="links"><a href="index.html">Home</a><a href="research.html">Research</a><a href="publications.html">Publications</a><a href="mentoring.html">Mentoring</a><a href="tools.html" class="active">Tools</a><a href="scidata.html">Data</a><a href="funding.html">Funding</a></div></div></nav>
+<nav><div class="inner"><a href="index.html" class="brand">Ashok K. Gupta</a><div class="links"><a href="index.html">Home</a><a href="research.html">Research</a><a href="publications.html">Publications</a><a href="mentoring.html">Mentoring</a><a href="tools.html" class="active">Tools</a><a href="scidata.html">Data</a><!-- <a href="funding.html">Funding</a> --></div></div></nav>
 
 <div class="content">
 <h1 class="page-title fade">Tools &amp; Skills</h1>
 <p class="page-sub fade">Computational tools, programming languages, models, and platforms used in my research.</p>
 
 <h2 class="fade">Programming &amp; AI Frameworks</h2>
-<div class="tool-section fade"><h3>Languages</h3><p>Python (SciPy, NumPy, xarray, Pandas), C++, Fortran, MATLAB, IDL, NCL.</p></div>
-<div class="tool-section fade"><h3>Machine Learning &amp; Deep Learning</h3><p>PyTorch, TensorFlow (including Keras), scikit-learn, MXNet, JAX, XGBoost. Architectures: CNNs, RNNs (LSTM, GRU), ConvLSTM, autoencoders, U-Nets, GANs, and Transformer-based models.</p></div>
-<div class="tool-section fade"><h3>Cloud &amp; HPC</h3><p>Experience deploying and managing workloads on AWS and Azure cloud platforms. Proficient in high-performance computing (HPC) environments across Linux, macOS, and Windows.</p></div>
+<div class="tool-section fade"><h3>Languages</h3><p>Python (NumPy, SciPy, xarray, Pandas, Dask), C++, Fortran, MATLAB, IDL, NCL.</p></div>
+<div class="tool-section fade"><h3>Machine Learning &amp; Deep Learning</h3><p>PyTorch, TensorFlow (including Keras), JAX, scikit-learn, XGBoost, MXNet. Architectures: CNNs and residual networks, RNNs (LSTM, GRU), ConvLSTM, autoencoders, U-Net and DeepLabV3+ segmentation, GANs, and Transformer-based models. Physics-informed and physics-constrained neural networks for retrieval and parameterization problems.</p></div>
+<div class="tool-section fade"><h3>Bayesian Inference &amp; Uncertainty Quantification</h3><p>Probabilistic programming with NumPyro and PyMC (MCMC/NUTS, posterior-predictive checks), bootstrap and ensemble methods, and large-ensemble Monte Carlo inverse modeling.</p></div>
+<div class="tool-section fade"><h3>Cloud &amp; HPC</h3><p>Experience deploying and managing workloads on AWS and Azure cloud platforms. Proficient in high-performance computing (HPC) environments across Linux, macOS, and Windows; GPU training workflows.</p></div>
 
 <h2 class="fade">Numerical Models</h2>
-<div class="tool-section fade"><h3>Climate &amp; Weather Models</h3><p>Community Earth System Model Version 2 (CESM2), WRF and WRF-Chem, CMIP6 multi-model ensemble analysis, E3SM.</p></div>
-<div class="tool-section fade"><h3>Radiative Transfer</h3><p>libRadTran (DISORT six-stream solver), RRTM. Conducted global, seasonally resolved clear-sky simulations of atmospheric absorptivity.</p></div>
-<div class="tool-section fade"><h3>Aerosol–Cloud Models</h3><p>Developed and implemented cloud microphysics algorithms within the state-of-the-art 3-D Aerosol–Cloud (AC) Model (Fortran; Lund University). Monte Carlo–based inverse modeling for global dust cycle reconstruction.</p></div>
+<div class="tool-section fade"><h3>Climate &amp; Weather Models</h3><p>Community Earth System Model Version 2 (CESM2), E3SM, superparameterized CAM (SPCAM), WRF and WRF-Chem, CMIP6 multi-model ensemble analysis; single-column model configurations for process studies.</p></div>
+<div class="tool-section fade"><h3>Radiative Transfer</h3><p>libRadTran (DISORT solver), RRTM/RRTMG. Global, seasonally resolved clear-sky and cloudy-sky simulations of atmospheric absorptivity and in-cloud radiative heating.</p></div>
+<div class="tool-section fade"><h3>Aerosol–Cloud &amp; Dust Models</h3><p>Developed and implemented cloud microphysics algorithms, including process-tagging tracers and secondary-ice mechanisms, within the 3-D Aerosol–Cloud (AC) Model (Fortran; Lund University). Large-ensemble inverse modeling for global dust cycle reconstruction; ERA5-driven dust emission modeling; DustCOMM observationally constrained dust products.</p></div>
 
-<h2 class="fade">Satellite &amp; Observational Datasets</h2>
-<div class="tool-section fade"><h3>Multi-Sensor Satellite Data</h3><p>IASI, MODIS (L1B and products), CloudSat, CALIPSO, Himawari-8/9 (L1 radiances), MIDAS–Aqua/Terra, Megha-Tropiques ScaRaB/3, SAGE III/ISS, CERES, PREFIRE.</p></div>
-<div class="tool-section fade"><h3>Ground-Based &amp; In Situ</h3><p>AERONET dust-dominated sites, ARM North Slope of Alaska (NSA) observatory, PINE chamber INP measurements, aircraft in-situ probes (CIP, 2D-S), and field campaign validation data.</p></div>
+<h2 class="fade">Satellite, Airborne &amp; Observational Datasets</h2>
+<div class="tool-section fade"><h3>Multi-Sensor Satellite Data</h3><p>CloudSat and CALIPSO (2B/L2 products), MODIS and VIIRS (L1B and products), IASI, CERES, PREFIRE, Himawari-8/9 AHI and GOES-16 ABI (L1 radiances), SEVIRI, MIDAS–Aqua/Terra, Megha-Tropiques ScaRaB/3, SAGE III/ISS, GPM/IMERG, and the CCIC ice-water-path climate record.</p></div>
+<div class="tool-section fade"><h3>Airborne Field Campaigns</h3><p>NASA airborne datasets from CPEX-CV, NAMMA, and GRIP (dropsondes, in-situ aerosol and cloud probes, and airborne radar/lidar) for simulation initialization and evaluation.</p></div>
+<div class="tool-section fade"><h3>Ground-Based &amp; In Situ</h3><p>AERONET dust-dominated sites, HadISD surface-station winds, ARM North Slope of Alaska (NSA) observatory, PINE chamber INP measurements, aircraft in-situ probes (CIP, 2D-S), and field-campaign validation data.</p></div>
 <div class="tool-section fade"><h3>Reanalysis Products</h3><p>ERA5, MERRA-2, and three aerosol reanalyses for dust cycle constraint and model evaluation.</p></div>
 </div>
 <footer><p>&copy; 2026 Ashok Kumar Gupta, Ph.D. · Vanderbilt University</p></footer>
