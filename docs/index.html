@@ -64,6 +64,14 @@ section h2{font-family:var(--serif);font-size:1.3rem;font-weight:600;color:var(-
 .feat .meta{font-size:.84rem;color:var(--blue);font-weight:500;margin-bottom:.4rem}
 .feat p{font-size:.9rem;color:var(--fg2);font-weight:300;line-height:1.55;margin:0}
 .feat .bl{margin-top:.4rem;font-size:.85rem;font-weight:500;color:var(--gold)}
+.highlight{border:1px solid var(--border);border-left:4px solid var(--blue);border-radius:6px;background:var(--bg);padding:1.4rem 1.6rem;margin-top:.8rem}
+.highlight .tag{display:inline-block;background:var(--blue);color:#fff;font-size:.72rem;font-weight:600;letter-spacing:.04em;text-transform:uppercase;padding:.2rem .55rem;border-radius:3px;margin-bottom:.6rem}
+.highlight h3{font-family:var(--serif);font-size:1.15rem;font-weight:600;margin-bottom:.25rem;line-height:1.35}
+.highlight .meta{font-size:.88rem;color:var(--blue);font-weight:500;margin-bottom:.9rem}
+.highlight video{width:100%;max-width:100%;border:1px solid var(--border);border-radius:4px;background:#fff;display:block}
+.highlight .cap{font-size:.88rem;color:var(--fg2);font-weight:300;line-height:1.6;margin-top:.7rem}
+.highlight .cap .lbl{font-weight:500;color:var(--fg)}
+@media(max-width:700px){.highlight{padding:1.1rem 1.1rem}}
 .marquee{position:relative;margin-top:.8rem;overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
 .marquee .track{display:flex;gap:1.2rem;width:max-content;animation:glide 90s linear infinite}
 .marquee:hover .track{animation-play-state:paused}
@@ -88,6 +96,22 @@ footer{border-top:1px solid var(--border);padding:1.5rem 0;text-align:center;fon
   </div>
   <div class="hero-photo"><img src="figures/profile.jpg" alt="Ashok Kumar Gupta, Ph.D."></div>
 </div>
+
+<div class="divider"><hr></div>
+
+<section>
+  <h2 class="fade">Latest Highlight</h2>
+  <div class="highlight fade">
+    <span class="tag">New in Science Advances</span>
+    <h3>A global decline in atmospheric dust during the 21st century</h3>
+    <div class="meta">Gupta, Kok, Amiridis, Gkikas, Rizos, Proestakis, Logothetis, Marinou &amp; P&eacute;rez Garc&iacute;a-Pando &middot; <em>Science Advances</em> (2026) &middot; <a href="https://doi.org/10.1126/sciadv.aef5691" target="_blank" rel="noopener">Read the paper</a></div>
+    <video controls loop muted playsinline preload="metadata" poster="figures/Figure4_Annual_DAOD_12_Panels_GlobalMean.png">
+      <source src="figures/Gupta_et_al_2026_Loading_ThreePanels_Media_Animation.mp4" type="video/mp4">
+      Your browser does not support embedded video. <a href="figures/Gupta_et_al_2026_Loading_ThreePanels_Media_Animation.mp4">Download the animation</a>.
+    </video>
+    <p class="cap"><span class="lbl">Figure 4.</span> An animation of year-by-year dust levels from 2003 to 2023, showing sustained declines over North Africa and Asia and in the global mean.</p>
+  </div>
+</section>
 
 <div class="divider"><hr></div>
 
